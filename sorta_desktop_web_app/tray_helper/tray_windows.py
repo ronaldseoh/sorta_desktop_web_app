@@ -8,7 +8,6 @@ class TrayHelperController(threading.Thread):
         threading.Thread.__init__(self)
 
         self.server_thread = server_thread
-        self.server_thread.join()
 
         self.menu_options = (
             ("Say Hello", None, self.say_hello),
