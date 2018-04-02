@@ -6,7 +6,7 @@ from contextlib import closing
 import webbrowser
 import cherrypy
 
-from .flask_main import app
+from . import flask_main
 from . import tray_helper
 
 
@@ -24,7 +24,7 @@ class ServerController(threading.Thread):
     def run(self):
         self.port_number = self.find_free_port()
 
-        cherrypy.tree.graft(app, "/")
+        cherrypy.tree.graft(flask_main.app, "/")
 
         cherrypy.config.update(
             {
