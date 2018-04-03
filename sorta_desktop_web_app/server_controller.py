@@ -2,7 +2,7 @@ import socket
 from contextlib import closing
 import cherrypy
 
-from . import flask_main
+from sorta_desktop_web_app import flask_main
 
 
 class ServerController():
