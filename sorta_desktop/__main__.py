@@ -1,4 +1,4 @@
-from sorta_desktop_web_app import tray_helper
+from sorta_desktop import tray_helper
 
 helper = tray_helper.TrayHelperController()
 

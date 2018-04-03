@@ -1,7 +1,7 @@
 import webbrowser
 import infi.systray
 
-from sorta_desktop_web_app.server_controller import ServerController
+from sorta_desktop.server_controller import ServerController
 
 
 class TrayHelperController():
