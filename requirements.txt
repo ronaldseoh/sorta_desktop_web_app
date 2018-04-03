@@ -1,0 +1,4 @@
+cherrypy
+flask
+rumps; sys.platform == 'darwin'
+infi.systray; sys.platform == 'win32'
