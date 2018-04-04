@@ -1,5 +1,3 @@
-from sorta_desktop import tray_helper
+from sorta_desktop import start_with_tray_helper
 
-helper = tray_helper.TrayHelperController()
-
-helper.start_app()
+start_with_tray_helper()
